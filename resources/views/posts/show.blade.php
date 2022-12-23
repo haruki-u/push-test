@@ -8,6 +8,10 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
     </head>
+    <x-app-layout>
+        <x-slot name="header">
+            Index
+        </x-slot>
     <body class="antialiased">
         <h1 class='title'>
             {{ $post->title }}
@@ -26,4 +30,5 @@
             <a href="/">戻る</a>
         </div>
     </body>
+    </x-app-layout>
 </html>
